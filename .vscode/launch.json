@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run C++ (LLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/main",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "build cpp"
+    }
+  ]
+}
