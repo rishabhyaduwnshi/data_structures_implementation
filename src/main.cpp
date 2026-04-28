@@ -1,6 +1,4 @@
 #include <iostream>
-#include "LinkedList.h"
-#include "Stack.h"
 #include "CircularQueue.h"
 
 int main()
