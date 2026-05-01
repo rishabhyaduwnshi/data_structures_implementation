@@ -1,20 +1,15 @@
 #ifndef CIRCULARQUEUE_H
 #define CIRCULARQUEUE_H
 
+#include "Node.h"
+
 // Structure for Circular Queue
-class CircularQueueNode
-{
-public:
-    int data;
-    CircularQueueNode* next_node;
-    CircularQueueNode* previous_node;
-};
 
 class CircularQueue
 {
 private:
-    CircularQueueNode* head_node;
-    CircularQueueNode* tail_node;
+    Doubly_Node* head_node;
+    Doubly_Node* tail_node;
 
 public:
     CircularQueue();

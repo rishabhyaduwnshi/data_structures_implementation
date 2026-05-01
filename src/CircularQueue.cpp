@@ -11,7 +11,7 @@ void CircularQueue::insert_node(int data)
 {
     if(head_node == nullptr)
     {
-        CircularQueueNode* new_node = new CircularQueueNode;
+        Doubly_Node* new_node = new Doubly_Node;
         new_node->data = data;
         new_node->previous_node = new_node;
         new_node->next_node = new_node;
@@ -21,7 +21,7 @@ void CircularQueue::insert_node(int data)
     }
     else
     {
-        CircularQueueNode* new_node = new CircularQueueNode;
+        Doubly_Node* new_node = new Doubly_Node;
         new_node->data = data;
         new_node->previous_node = tail_node;
         new_node->next_node = head_node;
@@ -40,7 +40,7 @@ void CircularQueue::delete_node_by_data(int data)
     }
 
     // Iterate through the circular list
-    CircularQueueNode* dummy_node = head_node;
+    Doubly_Node* dummy_node = head_node;
     do
     {
         if(dummy_node->data == data)
@@ -85,7 +85,7 @@ void CircularQueue::print_list()
         return;
     }
 
-    CircularQueueNode* dummy_node = head_node;
+    Doubly_Node* dummy_node = head_node;
     while(dummy_node != tail_node)
     {
         std::cout<<dummy_node->data<<std::endl;

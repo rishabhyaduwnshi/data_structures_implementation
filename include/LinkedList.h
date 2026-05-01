@@ -1,14 +1,9 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
-// Structure for Linked List
-class Node
-{
-public:
-    int data;
-    Node* next_node;
-};
+#include "Node.h"
 
+// Structure for Linked List
 class LinkedList
 {
 private:

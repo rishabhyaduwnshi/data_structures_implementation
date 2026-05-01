@@ -13,6 +13,7 @@
         "src/LinkedList.cpp",
         "src/Stack.cpp",
         "src/CircularQueue.cpp",
+        "src/HashList.cpp",
         "-o",
         "build/main"
       ],
